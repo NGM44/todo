@@ -11,36 +11,94 @@
 </head>
 <body>
 	<div class="container">
-		<h1>To Do List</h1>
-		<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
-  		<div class="mdl-tabs__tab-bar">
-      <a href="#add-item" class="mdl-tabs__tab is-active">Add Item</a>
-      <a href="#todo" class="mdl-tabs__tab">To-Do Tasks</a>
-      <a href="#completed" class="mdl-tabs__tab">Completed</a>
+    <div class='row'>
+    <div class='column major2'><h1>To Do List </h1> 
+    </div>	
+    <div class='column minor3'><div><div class="mdl-tabs__tab color"><p>Add Item</p></div> <div class="mdl-tabs__panel is-active" id="add-item">
+      <div class="mdl-textfield mdl-js-textfield">
+      <input class="mdl-textfield__input" type="text" id="new-task">
+      </div>
+  
+    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+    <i class="material-icons ">add</i>
+  </button>
+    </div></div> </div>
   </div>
+ 
+        <div class='row'>
+          <div class='column major'><div><div  class="mdl-tabs__tab color"><p>To-Do Tasks</p>T</div><div class="mdl-tabs__panel" id="todo">
+            <ul id="incomplete-tasks">
+            
+          </ul>
+          </div></div> </div>
+          <div class='column minor' ><div><div  class="mdl-tabs__tab"><button onclick="myFunction()" class='mdl-button mdl-js-button  mdl-button--colored'>Completed</button></div> 
+   <br><br>       <div class="mdl-tabs__panel" id="completed">
+            <ul id="completed-tasks" class="mdl-list">
+            
+            </li>
+            </ul>
+          </div></div> </div>
+        </div>
 
-  <div class="mdl-tabs__panel is-active" id="add-item">
-  	<div class="mdl-textfield mdl-js-textfield">
-    <input class="mdl-textfield__input" type="text" id="new-task">
-  	</div>
 
-	<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
-  <i class="material-icons">add</i>
-</button>
-  </div>
-  <div class="mdl-tabs__panel" id="todo">
-    <ul id="incomplete-tasks">
-    
-	</ul>
-  </div>
-  <div class="mdl-tabs__panel" id="completed">
-    <ul id="completed-tasks" class="mdl-list">
-    
-    </li>
-    </ul>
-  </div>
-</div>
+
+ 
+ 
+
 	</div>
 	<script src="js/script.js"></script>
 </body>	
 </html>
+<!-- 
+
+<div class="container">
+  <h1>To Do List</h1>
+  
+  <div class="row">
+
+    <div class="column major">
+      <div><div class="">To-Do Tasks</div>
+      <div class="mdl-tabs__panel" id="todo">
+        <ul id="incomplete-tasks">
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="column minor">
+    <div>
+    <div class="">Add Item</div>
+    <div class="mdl-tabs__panel is-active" id="add-item">
+      <div class="mdl-textfield mdl-js-textfield">
+        <input class="mdl-textfield__input" type="text" id="new-task">
+      </div>
+      <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+        <i class="material-icons">add</i>
+      </button>
+    </div>
+    </div>
+  </div>
+
+
+    <div class="column minor2">
+      <div>
+      <div class="">Completed</div>
+      <div class="mdl-tabs__panel" id="completed">
+        <ul id="completed-tasks" class="mdl-list">
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+
+
+  </div>
+
+
+
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script> -->

@@ -52,6 +52,7 @@ function completedTaskElement(str, i){
 	span.appendChild(str);
 	deleteButton.className = "mdl-button mdl-js-button mdl-js-ripple-effect delete";
 	deleteButton.innerText = "Delete";
+	deleteButton.style.fontSize = "small";
 	deleteButton.id = i+1;
   	listItem.appendChild(span);
   	listItem.appendChild(deleteButton);
@@ -151,3 +152,13 @@ function deleteComplete() {
 };
 
 addButton.addEventListener("click",addTask);
+
+
+function myFunction() {
+	var x = document.getElementById("completed");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
